@@ -15,7 +15,7 @@ def entrada():
     contador: int = 0
     valor: int = 0
     print("Digite um número positivo: ")
-    while contador<10:
+    while contador<100:
         valor = int(input("Digite o valor: "))
         if (valor<1):
             print("Número inválido, digite outro: ")
@@ -53,11 +53,11 @@ def escreveDir(v,M,m,c):
             tipo = "w"
             with open (file, tipo, encoding=enc) as file:
                 file.write(linha)
-        elif (c>1) and (c<10):
+        elif (c>1) and (c<100):
             tipo = "a"
             with open (file, tipo, encoding=enc) as file:
                 file.write(linha)
-        elif c==10:
+        elif c==100:
             tipo = "a"
             with open (file,tipo,encoding=enc) as file:
                 file.write(linha)
